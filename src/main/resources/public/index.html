@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DrMagnethands with friends</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="login" class="appview">
+    <p>
+        Username:<br> <input type="text" id="username">
+    <p>
+        Secret:<br><input type="text" id="secret">
+    <p>
+        <button type="button" onClick="login()">Login</button>
+</div>
+<div id="roomselection" class="appview">
+    Enter a room code and press join to join a room or a room name and create to create a new room
+    <p><input type="text" id="roomfield"></p>
+    <p>
+        <button type="button" onClick="createRoom()">Create</button>
+    </p>
+    <p>
+        <button type="button" onClick="joinRoom()">Join</button>
+    </p>
+</div>
+<div id="gameview" class="appview">
+    <div id="gameheader">
+        <p>
+            Username:
+        <div id="display-user"></div>
+        </p>
+        <p>
+            Roomname:
+        <div id="display-room"></div>
+        </p>
+        <p>
+            Roomcode:
+        <div id="display-room-code"></div>
+        </p>
+        <p>
+            Current round:
+        <div id="display-room-round"></div>
+        </p>
+        <p>Start new round (only owner): <button type="button" onClick="startRound()">Start new round</button></p>
+    </div>
+    <div id="middlearea">
+        <div id="showarea">
+            <button type="button" onClick="hideSnippets()">Hide snippets</button>
+            <div id="shownsnippets"></div>
+        </div>
+        <div id="membercontainer">
+            Room members:
+            <div id="members"></div>
+        </div>
+    </div>
+    <div id="snippetarea"></div>
+    <div id="snippetaddarea">
+        <div id="snippetflexcontainer">
+            <div id="newsnippetarea">
+                <p>New snippet:</p><p><textarea maxlength="100" id="newsnippet" rows="4" cols="50"></textarea></p>
+                <p>
+                    <button type="button" onClick="addSnippet()">Add snippet</button>
+                </p>
+            </div>
+            <div id="drawsnippet">Draw snippets: <input type="text" id="snippetdrawcount" content="3">
+                <button type="button" onClick="drawSnippet()">Draw</button>
+            </div>
+        </div>
+        <div id="snippetstats"></div>
+    </div>
+    <button type="button" onClick="initRoomView()">Reload view</button>
+</div>
+<div id="message"></div>
+</body>
+</html>

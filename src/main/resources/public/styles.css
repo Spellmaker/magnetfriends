@@ -1,0 +1,104 @@
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+#gameheader {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#gameheader p {
+    display: inline;
+    font-weight: bold;
+
+}
+
+#gameheader div {
+    display: inline;
+    padding-right: 20px;
+}
+
+#showarea {
+    border: 1px solid black;
+    height: 200px;
+    width: 80%;
+    padding: 5px;
+}
+
+#membercontainer {
+    width: 20%;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.owner {
+    font-weight: bold;
+}
+
+#middlearea {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+#snippetarea {
+    height: 200px;
+    border: 1px solid black;
+}
+
+#snippetaddarea {
+    border: 1px solid black;
+}
+
+#snippetflexcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#snippetstats * {
+    display: inline;
+    padding-right: 20px;
+}
+
+#newsnippetarea {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#shownsnippets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#snippetarea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.heldsnippet {
+    border: 1px solid black;
+    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shownsnippet {
+    border: 1px solid black;
+    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+
+.usedsnippet {
+    background-color: lightgray;
+}

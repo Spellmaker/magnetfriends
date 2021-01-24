@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: de.spellmaker.magnethands
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: maven
+features: [annotation-api, app-name, data, data-jpa, github-workflow-docker-registry, h2, http-client, jdbc-hikari, junit, kotlin, kotlin-application, log4j2, maven, netty-server, readme, shade, yaml]
